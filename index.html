@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz</title>
+  </head>
+
+  <img src="" alt="" id="banner" />
+
+  <body>
+    <div id="inicio" class="visivel">
+      <h1>Quiz</h1>
+      <br />
+      <h2>Teste agora seus conhecimentos!!</h2>
+      <br />
+      <button type="button" class="btnInit">Iniciar Quiz</button>
+    </div>
+
+    <div id="perguntas" class="quiz">
+      <h3>Pergunta <span id="question-number">1</span></h3>
+
+      <h2 id="question-text">Carregando pergunta...</h2>
+
+      <div id="options-container"></div>
+
+      <button id="next-button" style="display: none">Próxima Pergunta</button>
+    </div>
+
+    <div id="results-container" class="invisivel">
+      <h1>Quiz Finalizado!</h1>
+      <h2 id="score-text">Sua pontuação: 0</h2>
+      <p>Obrigado por Jogar!</p>
+      <button id="restart-button">Reiniciar Quiz</button>
+    </div>
+  </body>
+  <script src="./scripts.js"></script>
+  <script src="./operation.js"></script>
+</html>
